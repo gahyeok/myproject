@@ -63,7 +63,7 @@ import graphviz
 export_graphviz(
     model,
     out_file="korea.dot",
-    feature_names=['Age', '이직여부' ,'일일성과지표', '근무환경만족도', '시간당급여', '이전회사경험수'],
+    feature_names=['Age' ,'일일성과지표', '근무환경만족도', '시간당급여', '이전회사경험수'],
     class_names=['0', '1'],
     rounded=True,
     filled=True
@@ -90,6 +90,9 @@ from sklearn.metrics import confusion_matrix
 confusion_matrix(y_test, y_pred)
 
 
-feature_names = ['Age', '이직여부' ,'일일성과지표', '근무환경만족도', '시간당급여', '이전회사경험수']
+feature_names = ['Age' ,'일일성과지표', '근무환경만족도', '시간당급여', '이전회사경험수']
 
 person1 = []
+person2 = []
+person3 = []
+
